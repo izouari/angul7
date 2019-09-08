@@ -1,0 +1,7 @@
+<div >
+  <button class="dropdown-item" routerLink="/accueil" routerLinkActive="active" (click)="toAccueil()"  >Accueil</button>
+  <button class="dropdown-item" [disabled]="isDisable('DEMANDE')"  routerLink="/dossier/demande/{{dossier?.id}}"  routerLinkActive="active" >Demande</button>
+  <button class="dropdown-item" [disabled]="isDisable('TRAITEMENT')" routerLink="/dossier/traitement/{{dossier?.id}}" routerLinkActive="active">Traitement</button>
+  <!-- Autres façon du'tiliser le routerLink-->
+  <button class="dropdown-item" [disabled]="isDisable('DECISION')" [routerLink]="'/dossier/decision/' + dossier?.id" routerLinkActive="active">Decision</button>
+</div>

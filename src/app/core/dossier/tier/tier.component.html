@@ -1,0 +1,29 @@
+<div [formGroup]="parentForm">
+  <div class="row">
+    <div class="col-lg-5"><label>Type Tier</label></div>
+    <div class="col-lg-7">
+      <mat-radio-group [formControlName]="'typeTier'">
+        <mat-radio-button value="pp">PP</mat-radio-button>
+        <mat-radio-button value="pm">PM</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-5"><label>IdGrc</label></div>
+    <div class="col-lg-7">
+      <mat-form-field hintLabel="Max 7 characters">
+        <input matInput #input maxlength="7" [formControlName]="'idGrc'" placeholder="idGrc">
+        <mat-hint align="end">{{input.value?.length || 0}}/7</mat-hint>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row" [hidden]="isHiddenNumPm">
+    <div class="col-lg-5"><label>Numéro PM</label></div>
+    <div class="col-lg-7">
+      <mat-form-field hintLabel="Max 7 characters">
+        <input matInput #input maxlength="7" [formControlName]="'numPm'" placeholder="numPm">
+        <mat-hint align="end">{{input.value?.length || 0}}/7</mat-hint>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

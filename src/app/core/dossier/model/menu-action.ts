@@ -1,0 +1,5 @@
+export enum MenuAction {
+  DEMANDE = 'DEMANDE',
+  TRAITEMENT = 'TRAITEMENT',
+  DECISION = 'DECISION'
+}

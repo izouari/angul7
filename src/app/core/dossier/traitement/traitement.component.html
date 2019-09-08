@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-9">
+      <form [formGroup]="traitementForm" class="form-container">
+        <div class="row">
+          <div class="col-lg-2">
+            <label>Id</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" formControlName="id">
+          </div>
+          <div class="col-lg-2">
+            <label>Montant</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" formControlName="montant">
+          </div>
+        </div>
+
+        <button mat-raised-button [disabled]="!traitementForm.valid" (click)="valider()" type="button" class="btn btn-primary">Valider</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.cursor-poniter {
+  cursor:pointer;
+}
+
+button.bouton-right {
+  position: absolute;
+  right: 0;
+}
+
+h4.title {
+  color: dodgerblue;
+}
+

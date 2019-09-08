@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row" style="margin-top: 100px;">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4"><h4 class="title">Rechercher</h4></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+      <app-search-dossier #refSearch></app-search-dossier>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+      <div class="table-responsive-md">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8  table">
+
+          <!-- Numéro Dossier Column -->
+          <ng-container matColumnDef="NumDoss">
+            <th mat-header-cell *matHeaderCellDef> Numréro dossier</th>
+            <td mat-cell *matCellDef="let element"> {{element.id}}</td>
+          </ng-container>
+
+          <!-- Status Column -->
+          <ng-container matColumnDef="Status">
+            <th mat-header-cell *matHeaderCellDef>Status</th>
+            <td mat-cell *matCellDef="let element"> {{element.status}}</td>
+          </ng-container>
+
+          <!-- Sens Opeartion Column -->
+          <ng-container matColumnDef="sensOp">
+            <th mat-header-cell *matHeaderCellDef>Sens Opeartion</th>
+            <td mat-cell *matCellDef="let element"> {{element.sensOperation}}</td>
+          </ng-container>
+
+          <!-- Montant Column -->
+          <ng-container matColumnDef="montant">
+            <th mat-header-cell *matHeaderCellDef>Montant</th>
+            <td mat-cell *matCellDef="let element"> {{element.montant}}</td>
+          </ng-container>
+
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr class="cursor-poniter" mat-row (click)="openDossier(row)"
+              *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+      <button mat-raised-button (click)="createDossier()" type="button" class="btn btn-primary bouton-right">Create Dossier</button>
+    </div>
+  </div>
+</div>

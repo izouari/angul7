@@ -1,0 +1,18 @@
+<div class="example-container">
+  <form [formGroup]="createForm">
+    <app-tier (idGrcSelected)="getContratByIdGrc($event)" [parentForm]="createForm"></app-tier>
+    <div class="row">
+      <div class="col-lg-5"><label>Contrat</label></div>
+      <div class="col-lg-7">
+        <mat-select [formControlName]="'contract'">
+          <mat-option value="" [disabled]="contrat" selected>Sélectionnez une valeur</mat-option>
+          <mat-option  *ngFor="let cnt of contrat?.listCnt" [value]="cnt.id">
+           {{cnt.id}}
+          </mat-option>
+        </mat-select>
+
+      </div>
+    </div>
+  </form>
+  <button style="width: 132px" mat-raised-button [disabled]="!createForm.valid" (click)="validerDossier()" type="button" class="btn btn-primary bouton-right-valid">Valider</button>
+</div>

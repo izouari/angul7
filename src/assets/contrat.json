@@ -1,0 +1,69 @@
+[
+  {
+    "idGrc": "AAA1012",
+    "listCnt": [
+      {
+        "id": "CNTAAA1012-1",
+        "type": "CDD"
+      },
+      {
+        "id": "CNTAAA1012-2",
+        "type": "CDI"
+      },
+      {
+        "id": "CNTAAA1012-3",
+        "type": "CDI"
+      },
+      {
+        "id": "CNTAAA1012-4",
+        "type": "CDD"
+      }
+    ]
+  },
+  {
+    "idGrc": "AAA1011",
+    "listCnt": [
+      {
+        "id": "CNTAAA1011-1",
+        "type": "INT"
+      },
+      {
+        "id": "CNTAAA1011-2",
+        "type": "CDI"
+      },
+      {
+        "id": "CNTAAA1011-3",
+        "type": "CDI"
+      },
+      {
+        "id": "CNTAAA1011-4",
+        "type": "CDD"
+      },
+      {
+        "id": "CNTAAA1011-5",
+        "type": "CDD"
+      }
+    ]
+  },
+  {
+    "idGrc": "AAA1013",
+    "listCnt": [
+      {
+        "id": "CNTAAA1013-1",
+        "type": "CDD"
+      },
+      {
+        "id": "CNTAAA1013-2",
+        "type": "CDI"
+      },
+      {
+        "id": "CNTAAA1013-3",
+        "type": "CDI"
+      },
+      {
+        "id": "CNTAAA1013-4",
+        "type": "CDD"
+      }
+    ]
+  }
+]

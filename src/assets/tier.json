@@ -1,0 +1,20 @@
+[
+  {
+    "idGrc": "AAA1011",
+    "typeTier": "pp",
+    "nom": "tierPP1",
+    "prenom": "prenPP1"
+  },
+  {
+    "idGrc": "AAA1012",
+    "typeTier": "pp",
+    "nom": "tierPP2",
+    "prenom": "prenPP2"
+  },
+  {
+    "idGrc": "AAA1013",
+    "typeTier": "pm",
+    "nom": "tierPP3",
+    "prenom": "prenPP3"
+  }
+]

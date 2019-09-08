@@ -1,0 +1,39 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-style: dotted;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  border-width: 1px;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.example-container form {
+  margin-bottom: 20px;
+}
+
+.example-container form > * {
+  margin: 5px 0;
+}
+
+.example-container .mat-radio-button {
+  margin: 0 12px;
+}
+
+
+button.bouton-right {
+  position: absolute;
+  right: 0;
+}
+
+button.button-rech {
+  padding-right: 16px;
+  margin-right: 0px;
+  margin-left: 250px;
+  margin-top: 0px;
+  top: 22px;
+}
